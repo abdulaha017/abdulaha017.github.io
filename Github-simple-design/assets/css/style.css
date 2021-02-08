@@ -23,7 +23,9 @@ header h3 {
     text-transform: uppercase;
     color: #fff;
 }
-
+header a {
+    text-decoration: none;
+}
 
 /* hero-area */
 
