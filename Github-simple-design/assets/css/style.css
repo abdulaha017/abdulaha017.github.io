@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,7 @@ header {
 
 header h3 {
     font-size: 28px;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -64,8 +66,8 @@ header h3 {
 .hero-area-content h1 {
     color: #fff;
     font-size: 72px;
-    font-weight: normal;
-    font-family: sans-serif;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     margin-top: 20px;
 }
@@ -120,7 +122,8 @@ a.btn.get-start i {
 .block-right-content h3 {
     color: #9DA2A0;
     font-size: 36px;
-    font-weight: normal;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     line-height: 56px;
     margin-bottom: 30px;
@@ -178,6 +181,252 @@ a.btn.get-start i {
     color: #fff;
     font-weight: 700;
 }
+
+
+/* gallery */
+
+.gallery {
+    padding: 60px;
+}
+
+.gallery-container {
+    display: inline-block;
+}
+
+.single-gallery {
+    position: relative;
+    width: 48%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.single-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: none;
+    transition: 0.5s ease;
+}
+
+
+.single-gallery:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-text {
+    text-align: center;
+    padding: 0 12%;
+}
+
+.gallery-text h4 {
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 24%;
+    margin-bottom: 18px;
+}
+
+.gallery-text p {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* contact */
+
+.contact {
+    position: relative;
+}
+.contact-overlay {
+    height: 100vh;
+    text-align: center;
+    background-image: url(../images/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contact-overlay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(26 68 234)0%, rgb(213 31 232)100%);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.contact-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.contact-head {
+    padding-bottom: 56px;
+}
+
+.contact-head h3 {
+    color: #9DA2A0;
+    font-size: 36px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-head h3 span {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+}
+.contact-head p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-area {}
+
+.contact-area input[type="text"], 
+.contact-area input[type="email"], 
+.contact-area textarea {
+    display: block;
+    width: 640px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    color: #fff;
+    outline: none;
+}
+
+.contact-area input[type="submit"] {
+    padding: 10px 24px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    float: right;
+    transition: 0.3s;
+}
+
+.contact-area input[type="submit"]:hover {
+    border: 1px solid #9DA2A0;
+    background: transparent;
+    color: #9DA2A0;
+}
+
+.contact-area ::placeholder {
+    color: #fff;
+}
+
+
+/* call-to-action */
+
+.call-to-action {
+    padding: 40px 80px 60px;
+    text-align: center;
+}
+
+a.top-right-btn {
+    color: #222;
+    text-align: right !important;
+    display: block;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a.top-right-btn:hover {
+    color: #AF419E;
+}
+
+a.top-right-btn i {
+    padding-left: 8px;
+}
+
+.subscribe {
+    padding: 60px 0;
+}
+
+.subscribe h3 {
+    color: #9DA2A0;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.subscribe h3 span {
+    color: #000;
+    font-size: 36px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.subscribe p {
+    color: #9DA2A0;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 15px 0 0;
+}
+
+.subscribe form {
+    padding: 15px 0;
+}
+
+.subscribe input[type="email"] {
+    padding: 12px 20px;
+    color: #222;
+    background: #DDDDDD;
+    outline: none;
+    border: 1px solid #DDDDDD;
+    width: 600px;
+    border-radius: 25px;
+}
+
+.subscribe input[type="submit"] {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    right: 25%;
+    margin-top: 0px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #6359bd 5%, #cc94de 54%);
+    color: #fff;
+}
+
+.subscribe input[type="submit"]:focus {
+    outline: none;
+}
+
+
+.subscribe input[type="submit"] {
+}
+
+
+
+
 
 
 
